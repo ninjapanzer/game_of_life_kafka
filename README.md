@@ -17,3 +17,6 @@ __NOTE:__
 start with `nix develop` and then run `bundle exec ruby main` to start the game of life server.
 
 When you are done run `exit` to shutdown the kafka cluster.
+
+## Sample
+![Recording 2023-10-10 at 00 06 02](https://github.com/ninjapanzer/game_of_life_kafka/assets/159591/5fa6f127-8b7e-4a6d-a6bd-48f18208585d)
