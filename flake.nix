@@ -7,7 +7,9 @@
     let
       pkgs = nixpkgs.legacyPackages.x86_64-linux.pkgs;
       kafka = pkgs.apacheKafka;
-      ruby = pkgs.ruby;
+      ruby = pkgs.ruby_3_2;
+      buf = pkgs.buf;
+      protoc = pkgs.protobuf;
     in {
       defaultPackage.x86_64-linux = kafka;
       devShells.x86_64-linux.default = pkgs.mkShell {
@@ -15,6 +17,8 @@
         buildInputs = [
           kafka
           ruby
+          buf
+          protoc
         ];
         shellHook = ''
           touch nix.env.local
